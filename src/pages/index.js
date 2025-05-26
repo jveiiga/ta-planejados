@@ -30,10 +30,10 @@ export default function Home() {
           <div
             data-aos="fade-right"
             data-aos-duration="2000"
-            className="absolute bottom-10 h-90 w-[70%] lg:w-[50%] bg-[#0E2843] z-10"></div>
+            className="hidden sm:block absolute bottom-10 h-90 w-[70%] lg:w-[50%] bg-[#0E2843] z-10"></div>
 
           <div className="relative flex justify-center items-center w-full h-full z-10">
-            <div className="w-full h-[40vh] lg:w-full lg:h-[90vh]">
+            <div className="hidden sm:block w-full h-[40vh] lg:h-[90vh]">
               <Image
                 src="/image-woman.png"
                 alt="Imagem mulher apontando"
@@ -44,8 +44,8 @@ export default function Home() {
               />
             </div>
 
-            <div className="absolute right-17 lg:right-50 w-[34%]">
-              <div>
+            <div className="flex flex-col lg:absolute lg:right-17 lg:right-50 lg:w-[34%]">
+              <div className="w-full">
                 <h1
                   style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.86)" }}
                   className="text-5xl lg:text-7xl font-black text-[#FFFFFF]">
@@ -67,7 +67,7 @@ export default function Home() {
                 <button
                   data-aos="fade-down"
                   data-aos-duration="2000"
-                  className="flex px-20 lg:px-45 py-5 text-lg text-[#FFFFFF] font-semibold bg-[#128C7E] hover:bg-[#0e705f] transition cursor-pointer">
+                  className="flex px-10 lg:px-20 lg:px-45 py-5 text-lg text-[#FFFFFF] font-semibold bg-[#128C7E] hover:bg-[#0e705f] transition cursor-pointer">
                   Solicitar Orçamento
                   <FaWhatsapp className="pl-1" size={32} color="#25D366" />
                 </button>
@@ -150,7 +150,7 @@ export default function Home() {
                 <div
                   data-aos="flip-up"
                   data-aos-duration="2000"
-                  className="relative flex justify-center py-5 w-115">
+                  className="relative flex justify-center mb-10">
                   <Image
                     src="/planejado-cozinha-azul.jpeg"
                     alt="Imagem moveis planejados"
@@ -158,7 +158,7 @@ export default function Home() {
                     height={500}
                     className="relative rounded-3xl z-420"
                   />
-                  <div className="absolute top-0 bg-[#0E2843] rounded-3xl left-[-3%] w-115 h-155"></div>
+                  <div className="absolute -top-4 bg-[#0E2843] rounded-3xl left-[-3%] w-full h-full"></div>
                 </div>
               </div>
             </div>
@@ -189,11 +189,11 @@ export default function Home() {
               data-aos-duration="2000"
               className="text-white font-bold mb-5">Cortes especiais, acabamentos diferenciados, portas com detalhes únicos. Nossa estrutura permite um nível de personalização que vai muito além.</p>
           </div>
-          <div className="flex flex-wrap justify-center w-full pt-5 gap-5">
+          <div className="flex flex-wrap justify-center w-full pt-5 gap-5 lg:gap-5">
             <div
               data-aos="fade-right"
               data-aos-duration="2000"
-              className="relative flex flex-col lg:gap-4 mr-4 lg:mb-4">
+              className="relative flex flex-col lg:gap-4 lg:mr-4 lg:mb-4">
               <Image
                 src="/sala.jpeg"
                 alt="Imagem moveis planejados"
@@ -201,7 +201,7 @@ export default function Home() {
                 height={500}
                 className=" rounded-3xl border-4 border-solid border-[#BE1E21]"
               />
-              <h3 className="absolute bottom-4 left-[50%] transform -translate-x-[50%] text-white bg-[#0E2843] bg-opacity-50 px-4 py-2 rounded-lg">Painel Planejado</h3>
+              <h3 className="absolute bottom-4 whitespace-nowrap left-[50%] transform -translate-x-[50%] text-white bg-[#0E2843] bg-opacity-50 px-4 py-2 rounded-lg">Painel Planejado</h3>
             </div>
             <div
               data-aos="fade-down"
@@ -219,7 +219,7 @@ export default function Home() {
             <div
               data-aos="fade-left"
               data-aos-duration="2000"
-              className="relative flex flex-col gap-4 ml-4">
+              className="relative flex flex-col lg:gap-4 lg:ml-4">
               <Image
                 src="/cozinha-verde.jpeg"
                 alt="Imagem moveis planejados"
@@ -227,7 +227,7 @@ export default function Home() {
                 height={500}
                 className="rounded-3xl border-4 border-solid border-[#BE1E21]"
               />
-              <h3 className="absolute bottom-8 left-[50%] transform -translate-x-[50%] text-white bg-[#0E2843] bg-opacity-50 px-4 py-2 rounded-lg">Armario Planejados</h3>
+              <h3 className="absolute bottom-8 whitespace-nowrap left-[50%] transform -translate-x-[50%] text-white bg-[#0E2843] bg-opacity-50 px-4 py-2 rounded-lg">Armario Planejados</h3>
             </div>
             <div
               data-aos="fade-right"
@@ -245,7 +245,7 @@ export default function Home() {
             <div
               data-aos="fade-up"
               data-aos-duration="2000"
-              className="relative flex flex-col gap-4 mr-4 ml-4">
+              className="relative flex flex-col lg:gap-4 lg:mr-4 lg:ml-4">
               <Image
                 src="/guarda-roupa-marrom.jpeg"
                 alt="Imagem moveis planejados"
@@ -266,7 +266,7 @@ export default function Home() {
                 height={500}
                 className="rounded-3xl border-4 border-solid border-[#BE1E21]"
               />
-              <h3 className="absolute bottom-4 left-[50%] transform -translate-x-[50%] text-white bg-[#0E2843] bg-opacity-50 px-4 py-2 rounded-lg">Cozinhas Planejadas</h3>
+              <h3 className="absolute bottom-4 whitespace-nowrap left-[50%] transform -translate-x-[50%] text-white bg-[#0E2843] bg-opacity-50 px-4 py-2 rounded-lg">Cozinhas Planejadas</h3>
             </div>
           </div>
         </section>
@@ -292,9 +292,9 @@ export default function Home() {
                 height={900}
                 className="relative rounded-3xl z-420"
               />
-              <div className="absolute -top-5 left-[-3%] w-[100%] h-95 lg:top-7 lg:left-[-2%] lg:w-210 lg:h-140 bg-[#0E2843] rounded-3xl"></div>
+              <div className="absolute -top-3 left-[-3%] w-full h-full lg:top-7 lg:left-[-2%] lg:w-210 lg:h-140 bg-[#0E2843] rounded-3xl"></div>
             </div>
-            <div className="lg:w-[40%] p-8 flex flex-col gap-8">
+            <div className="flex flex-col gap-8 mt-5 lg:p-8 lg:w-[40%]">
               <ul className="space-y-6">
                 <li
                   data-aos="fade-left"
@@ -424,11 +424,11 @@ export default function Home() {
                 height={800}
                 className="relative rounded-3xl z-420"
               />
-              <div className="absolute -top-5 left-[3%] w-[100%] h-95 lg:top-[-5%] lg:left-[4%] lg:w-185 lg:h-125 bg-[#0E2843] rounded-3xl"></div>
+              <div className="absolute -top-3 left-2 w-full h-full lg:top-[-5%] lg:left-[4%] lg:w-185 lg:h-125 bg-[#0E2843] rounded-3xl"></div>
             </div>
           </div>
 
-          <div className="flex flex-col lg:flex-row justify-center mx-5 pt-20">
+          <div className="flex flex-col pt-20 mx-5 lg:flex-row justify-center">
             <div
               data-aos="fade-right"
               data-aos-duration="2000"
@@ -440,12 +440,12 @@ export default function Home() {
                 height={900}
                 className="relative z-420 rounded-3xl lg:ml-[13%] lg:w-[90%]"
               />
-              <div className="absolute -top-4 left-[-2.5%] w-[100%] h-83 lg:top-[-4%] lg:left-[11%] lg:w-200 lg:h-110 bg-[#0E2843] rounded-3xl"></div>
+              <div className="absolute -top-3 left-[-2.5%] w-full h-full lg:top-[-4%] lg:left-[11%] lg:w-200 lg:h-110 bg-[#0E2843] rounded-3xl"></div>
             </div>
 
-            <div className="flex mt-10 md:flex-row items-center lg:w-[50%] flex-col gap-8 pl-[4%] pr-[9%]">
-              <div className="flex-1 space-y-7">
-                <div className="flex items-center gap-4">
+            <div className="flex justify-center mt-10 lg:w-[50%] lg:pl-[4%] lg:pr-[9%]">
+              <div className="flex flex-col space-y-7">
+                <div className="lg:flex items-center gap-4">
                   <FaCogs className="text-[#BE1E21] text-5xl" />
                   <h2
                     data-aos="fade-left"
@@ -475,13 +475,12 @@ export default function Home() {
         <section className="relative flex flex-col justify-center items-center w-full py-30 bg-[url('/background-planejados.jpg')] bg-cover bg-center">
           <div className="absolute inset-0 bg-black opacity-80"></div>
           <div className="relative text-center px-5">
-            {/* Estrelas */}
             <div className="flex justify-center mt-6">
-              <FaStar className="text-yellow-500 text-7xl mx-1" />
-              <FaStar className="text-yellow-500 text-8xl mx-1" />
-              <FaStar className="text-yellow-500 text-9xl mx-1" />
-              <FaStar className="text-yellow-500 text-8xl mx-1" />
-              <FaStar className="text-yellow-500 text-7xl mx-1" />
+              <FaStar className="text-yellow-500 text-4xl lg:text-7xl mx-1" />
+              <FaStar className="text-yellow-500 text-5xl lg:text-8xl mx-1" />
+              <FaStar className="text-yellow-500 text-6xl lg:text-9xl mx-1" />
+              <FaStar className="text-yellow-500 text-5xl lg:text-8xl mx-1" />
+              <FaStar className="text-yellow-500 text-4xl lg:text-7xl mx-1" />
             </div>
             <h3
               data-aos="fade-up"
@@ -496,11 +495,12 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-4 pt-10 px-3 z-10">
+          <div className="w-[80%] max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-4 pt-10 px-3 z-10">
+
             <div
               data-aos="fade-right"
               data-aos-duration="2000"
-              className="lg:w-100 bg-[#FFFFFF] p-5 rounded-lg border-2 border-dashed border-[#BE1E21]">
+              className="flex flex-col justify-start w-full lg:w-100 bg-[#FFFFFF] p-5 rounded-lg border-2 border-dashed border-[#BE1E21]">
               <h2 className="font-semibold">Ana Julia</h2>
               <p className="text-[#969A92] text-sm">1 Comentário - 3 fotos</p>
               <div className="flex justify-start py-1">
@@ -599,7 +599,7 @@ export default function Home() {
             <p className="text-lg"><span className="text-[#BE1E21] font-bold">Endereço:</span> Rua. Serra de Guaibu 178, Zona Leste | São Paulo - SP</p>
           </div>
           <div className=" py-10 px-5">
-            <div className="flex flex-wrap justify-center items-center max-w-6xl mx-auto lg:gap-40">
+            <div className="flex flex-col mx-5 lg:flex-wrap justify-center items-center lg:max-w-6xl mx-auto lg:gap-40">
               <div>
                 <h2
                   data-aos="fade-right"
@@ -631,7 +631,7 @@ export default function Home() {
                   data-aos="fade-right"
                   data-aos-duration="2000"
                   className="text-3xl font-bold mb-6">Agende Seu Horário:</h2>
-                <div className="bg-[#BE1E21] text-white p-6 w-90 rounded-lg">
+                <div className="bg-[#BE1E21] text-white p-6 lg:w-90 rounded-lg">
                   <p className="bg-white text-[#BE1E21] inline-block px-4 py-1 rounded-full font-semibold mb-4">Horário de funcionamento: </p>
                   <p><strong>Segunda a Sexta-feira:</strong> 9:00h às 18:00</p>
                   <p><strong>Sábado:</strong> 9:30h até 12:00h</p>
