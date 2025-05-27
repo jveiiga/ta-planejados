@@ -1,13 +1,23 @@
 import Image from "next/image";
 import { FaWhatsapp, FaLightbulb, FaCouch, FaDollarSign, FaIndustry, FaRegHandshake, FaBox, FaCogs, FaStar, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa";
 import { MdOutlineCheckCircle, MdOutlineHighQuality } from "react-icons/md";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Aos from "aos";
 
 export default function Home() {
 
+  const [show, setShow] = useState(false);
+
   useEffect(() => {
     Aos.init({ duration: 1000, once: true });
+  }, []);
+
+  useEffect(() => {
+    function onScroll() {
+      setShow(window.scrollY > 500);
+    }
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
@@ -88,8 +98,17 @@ export default function Home() {
           </div>
         </section>
 
-
         <section className="w-full">
+          <a
+            href="https://wa.me/5599999999999"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`fixed z-50 bottom-6 right-6 bg-[#25D366] rounded-full shadow-lg transition-all duration-300 animate-pulse ${show ? "opacity-100 scale-100" : "opacity-0 scale-0 pointer-events-none"
+              } w-16 h-16 flex items-center justify-center`}
+            aria-label="Fale conosco pelo WhatsApp"
+          >
+            <FaWhatsapp size={32} color="#fff" />
+          </a>
           <div className="text-center flex lg:justify-center text-[#FFFFFF] text-3xl font-extrabold py-3 bg-[#BE1E21]">
             <h3 className="px-[5%]">Apresentamos uma nova forma de pensar o seu espaço</h3>
           </div>
