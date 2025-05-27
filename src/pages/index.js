@@ -78,7 +78,7 @@ export default function Home() {
                 data-aos-duration="2000"
                 className="flex justify-center mt-9">
                 <Image
-                  src="/ta-planejados.PNG"
+                  src="/ta-planejados.png"
                   alt="Logo Ta Planejados"
                   width={200}
                   height={200}
@@ -117,7 +117,7 @@ export default function Home() {
             <div className="flex flex-col items-center lg:flex-row justify-center px-[10%]">
               <div className="lg:w-[200px] lg:h-[200px]">
                 <Image
-                  src="/ta.PNG"
+                  src="/ta.png"
                   alt="Logo Ta Planejados"
                   width={350}
                   height={350}
@@ -176,7 +176,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col items-center pt-20 px-[5%] lg:px-[30%]">
             <Image
-              src="/ta-planejados.PNG"
+              src="/ta-planejados.png"
               alt="Logo ta moveis planejados"
               width={300}
               height={300}
