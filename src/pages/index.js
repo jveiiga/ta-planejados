@@ -67,7 +67,7 @@ export default function Home() {
                 <button
                   data-aos="fade-down"
                   data-aos-duration="2000"
-                  className="flex px-15 lg:px-20 lg:px-45 py-5 text-lg text-[#FFFFFF] font-semibold bg-[#128C7E] hover:bg-[#0e705f] transition cursor-pointer">
+                  className="flex px-15 whitespace-nowrap lg:px-25 lg:px-45 py-8 text-2xl text-[#FFFFFF] font-semibold bg-[#128C7E] hover:bg-[#0e705f] transition cursor-pointer animate-pulse">
                   Solicitar Orçamento
                   <FaWhatsapp className="pl-1" size={32} color="#25D366" />
                 </button>
