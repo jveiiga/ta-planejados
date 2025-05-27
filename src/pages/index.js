@@ -15,7 +15,7 @@ export default function Home() {
       <main>
         <section className="relative flex-col justify-center items-center w-full h-[80vh] lg:h-[100vh] bg-[url('/background.jpg')] bg-cover bg-center">
           <div className="absolute inset-0 bg-black opacity-40 z-0"></div>
-          <div className="absolute top-5 h-16 lg:top-20 w-[80%] lg:w-[60%] bg-[#0E2843] z-10">
+          <div className="absolute top-10 h-16 lg:top-20 w-[80%] lg:w-[60%] bg-[#0E2843] z-10">
             <div
               data-aos="fade-right"
               data-aos-duration="2000"
@@ -193,7 +193,7 @@ export default function Home() {
             <div
               data-aos="fade-right"
               data-aos-duration="2000"
-              className="relative flex flex-col lg:gap-4 lg:mr-4 lg:mb-4">
+              className="relative flex flex-col mx-3 lg:gap-4 lg:mr-4 lg:mb-4">
               <Image
                 src="/sala.jpeg"
                 alt="Imagem moveis planejados"
@@ -206,7 +206,7 @@ export default function Home() {
             <div
               data-aos="fade-down"
               data-aos-duration="2000"
-              className="relative">
+              className="relative mx-3">
               <Image
                 src="/guarda-roupa-bege.jpeg"
                 alt="Imagem moveis planejados"
@@ -219,7 +219,7 @@ export default function Home() {
             <div
               data-aos="fade-left"
               data-aos-duration="2000"
-              className="relative flex flex-col lg:gap-4 lg:ml-4">
+              className="relative flex flex-col mx-3 lg:gap-4 lg:ml-4">
               <Image
                 src="/cozinha-verde.jpeg"
                 alt="Imagem moveis planejados"
@@ -232,7 +232,7 @@ export default function Home() {
             <div
               data-aos="fade-right"
               data-aos-duration="2000"
-              className="relative">
+              className="relative mx-3">
               <Image
                 src="/guarda-roupa-aberto.jpeg"
                 alt="Imagem moveis planejados"
@@ -245,7 +245,7 @@ export default function Home() {
             <div
               data-aos="fade-up"
               data-aos-duration="2000"
-              className="relative flex flex-col lg:gap-4 lg:mr-4 lg:ml-4">
+              className="relative flex flex-col mx-3 lg:gap-4 lg:mr-4 lg:ml-4">
               <Image
                 src="/guarda-roupa-marrom.jpeg"
                 alt="Imagem moveis planejados"
@@ -258,7 +258,7 @@ export default function Home() {
             <div
               data-aos="fade-left"
               data-aos-duration="2000"
-              className="relative">
+              className="relative mx-3">
               <Image
                 src="/cozinha-musgo.jpeg"
                 alt="Imagem moveis planejados"
