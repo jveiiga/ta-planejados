@@ -45,10 +45,10 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col lg:absolute lg:right-17 lg:right-50 lg:w-[34%]">
-              <div className="w-full">
+              <div className="w-full mt-10">
                 <h1
                   style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.86)" }}
-                  className="text-5xl lg:text-7xl font-black text-[#FFFFFF]">
+                  className="text-6xl lg:text-7xl font-black text-[#FFFFFF]">
                   Móveis Planejados
                 </h1>
                 <h2
@@ -58,7 +58,7 @@ export default function Home() {
                   }}
                   data-aos="fade-left"
                   data-aos-duration="2000"
-                  className="text-5xl lg:text-8xl font-extrabold text-[#FFFFFF]">
+                  className="text-6xl lg:text-8xl font-extrabold text-[#FFFFFF]">
                   <span className="sm:text-sm lg:text-lg">com até</span> 60% OFF
                 </h2>
               </div>
@@ -67,7 +67,7 @@ export default function Home() {
                 <button
                   data-aos="fade-down"
                   data-aos-duration="2000"
-                  className="flex px-10 lg:px-20 lg:px-45 py-5 text-lg text-[#FFFFFF] font-semibold bg-[#128C7E] hover:bg-[#0e705f] transition cursor-pointer">
+                  className="flex px-15 lg:px-20 lg:px-45 py-5 text-lg text-[#FFFFFF] font-semibold bg-[#128C7E] hover:bg-[#0e705f] transition cursor-pointer">
                   Solicitar Orçamento
                   <FaWhatsapp className="pl-1" size={32} color="#25D366" />
                 </button>
@@ -80,8 +80,8 @@ export default function Home() {
                 <Image
                   src="/ta-planejados.png"
                   alt="Logo Ta Planejados"
-                  width={200}
-                  height={200}
+                  width={300}
+                  height={300}
                 />
               </div>
             </div>
