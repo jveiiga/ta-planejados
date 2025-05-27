@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className="overflow-x-hidden">
       <main>
-        <section className="relative flex-col justify-center items-center w-full h-[88vh] lg:h-[100vh] bg-[url('/background.jpg')] bg-cover bg-center">
+        <section className="relative flex-col justify-center items-center w-full h-[80vh] lg:h-[100vh] bg-[url('/background.jpg')] bg-cover bg-center">
           <div className="absolute inset-0 bg-black opacity-40 z-0"></div>
           <div className="absolute top-5 h-16 lg:top-20 w-[80%] lg:w-[60%] bg-[#0E2843] z-10">
             <div
@@ -45,10 +45,10 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col lg:absolute lg:right-17 lg:right-50 lg:w-[34%]">
-              <div className="w-full mt-10">
+              <div className="w-full mt-15">
                 <h1
                   style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.86)" }}
-                  className="text-6xl lg:text-7xl font-black text-[#FFFFFF]">
+                  className="text-6xl mx-1 lg:text-7xl font-black text-[#FFFFFF]">
                   Móveis Planejados
                 </h1>
                 <h2
@@ -58,7 +58,7 @@ export default function Home() {
                   }}
                   data-aos="fade-left"
                   data-aos-duration="2000"
-                  className="text-6xl lg:text-8xl font-extrabold text-[#FFFFFF]">
+                  className="text-6xl mx-1 lg:text-8xl font-extrabold text-[#FFFFFF]">
                   <span className="sm:text-sm lg:text-lg">com até</span> 60% OFF
                 </h2>
               </div>
