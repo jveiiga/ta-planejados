@@ -9,10 +9,6 @@ export default function Home() {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    Aos.init({ duration: 1000, once: true });
-  }, []);
-
-  useEffect(() => {
     function onScroll() {
       setShow(window.scrollY > 500);
     }
@@ -20,12 +16,17 @@ export default function Home() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    Aos.init({ duration: 1000, once: true });
+  }, []);
+
+
   return (
     <div className="overflow-x-hidden">
       <main>
-        <section className="relative flex-col justify-center items-center w-full h-[80vh] lg:h-[100vh] bg-[url('/background.jpg')] bg-cover bg-center">
+        <section className="relative flex-col justify-center items-center w-full h-[80vh] lg:h-[100vh] bg-[url('/background.jpg')] bg-cover bg-center" id="inicio">
           <div className="absolute inset-0 bg-black opacity-40 z-0"></div>
-          <div className="absolute top-10 h-16 lg:top-20 w-[80%] lg:w-[60%] bg-[#0E2843] z-10">
+          <div className="absolute top-10 h-16 w-[80%] lg:w-[60%] bg-[#0E2843] z-10">
             <div
               data-aos="fade-right"
               data-aos-duration="2000"
@@ -74,13 +75,21 @@ export default function Home() {
               </div>
 
               <div className="flex justify-center mt-5 lg:mt-15">
-                <button
-                  data-aos="fade-down"
-                  data-aos-duration="2000"
-                  className="flex px-15 lg:px-20 lg:px-45 py-5 text-lg text-[#FFFFFF] font-semibold bg-[#128C7E] hover:bg-[#0e705f] transition cursor-pointer animate-pulse">
-                  Solicitar Orçamento
-                  <FaWhatsapp className="pl-1" size={32} color="#25D366" />
-                </button>
+                <a
+                  href="https://wa.me/5511951137030?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button
+                    data-aos="fade-down"
+                    data-aos-duration="2000"
+                    className="flex items-center px-15 lg:px-20 lg:px-45 py-7 text-lg text-[#FFFFFF] font-semibold bg-[#128C7E] hover:bg-[#0e705f] transition cursor-pointer animate-pulse"
+                    type="button"
+                  >
+                    Solicitar Orçamento
+                    <FaWhatsapp className="pl-1" size={32} color="#25D366" />
+                  </button>
+                </a>
               </div>
 
               <div
@@ -99,16 +108,14 @@ export default function Home() {
         </section>
 
         <section className="w-full">
-          <a
-            href="https://wa.me/5599999999999"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`fixed z-50 bottom-6 right-6 bg-[#25D366] rounded-full shadow-lg transition-all duration-300 animate-pulse ${show ? "opacity-100 scale-100" : "opacity-0 scale-0 pointer-events-none"
-              } w-16 h-16 flex items-center justify-center`}
-            aria-label="Fale conosco pelo WhatsApp"
+          <button
+            onClick={() => {
+              document.getElementById('inicio')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+            className={`fixed z-50 bottom-6 right-6 bg-[#25D366] rounded-full shadow-lg transition-all duration-300 animate-pulse cursor-pointer ${show ? "opacity-100 scale-100" : "opacity-0 scale-0 pointer-events-none"} w-16 h-16 flex items-center justify-center`} aria-label="Fale conosco pelo WhatsApp"
           >
             <FaWhatsapp size={32} color="#fff" />
-          </a>
+          </button>
           <div className="text-center flex lg:justify-center text-[#FFFFFF] text-3xl font-extrabold py-3 bg-[#BE1E21]">
             <h3 className="px-[5%]">Apresentamos uma nova forma de pensar o seu espaço</h3>
           </div>
@@ -214,10 +221,10 @@ export default function Home() {
               data-aos-duration="2000"
               className="relative flex flex-col mx-3 lg:gap-4 lg:mr-4 lg:mb-4">
               <Image
-                src="/sala.jpeg"
+                src="/sala.jpg"
                 alt="Imagem moveis planejados"
-                width={500}
-                height={500}
+                width={450}
+                height={450}
                 className=" rounded-3xl border-4 border-solid border-[#BE1E21]"
               />
               <h3 className="absolute bottom-4 whitespace-nowrap left-[50%] transform -translate-x-[50%] text-white bg-[#0E2843] bg-opacity-50 px-4 py-2 rounded-lg">Painel Planejado</h3>
@@ -227,10 +234,10 @@ export default function Home() {
               data-aos-duration="2000"
               className="relative mx-3">
               <Image
-                src="/guarda-roupa-bege.jpeg"
+                src="/guarda-roupa-bege.jpg"
                 alt="Imagem moveis planejados"
-                width={500}
-                height={500}
+                width={450}
+                height={450}
                 className="rounded-3xl border-4 border-solid border-[#BE1E21]"
               />
               <h3 className="absolute bottom-8 whitespace-nowrap left-[50%] transform -translate-x-[50%] text-white bg-[#0E2843] bg-opacity-50 px-4 py-2 rounded-lg">Guarda Roupa Planejado</h3>
@@ -240,10 +247,10 @@ export default function Home() {
               data-aos-duration="2000"
               className="relative flex flex-col mx-3 lg:gap-4 lg:ml-4">
               <Image
-                src="/cozinha-verde.jpeg"
+                src="/cozinha-verde.jpg"
                 alt="Imagem moveis planejados"
-                width={500}
-                height={500}
+                width={450}
+                height={450}
                 className="rounded-3xl border-4 border-solid border-[#BE1E21]"
               />
               <h3 className="absolute bottom-8 whitespace-nowrap left-[50%] transform -translate-x-[50%] text-white bg-[#0E2843] bg-opacity-50 px-4 py-2 rounded-lg">Armario Planejados</h3>
@@ -253,10 +260,10 @@ export default function Home() {
               data-aos-duration="2000"
               className="relative mx-3">
               <Image
-                src="/guarda-roupa-aberto.jpeg"
+                src="/guarda-roupa-aberto.jpg"
                 alt="Imagem moveis planejados"
-                width={500}
-                height={500}
+                width={450}
+                height={450}
                 className="rounded-3xl border-4 border-solid border-[#BE1E21]"
               />
               <h3 className="absolute bottom-4 whitespace-nowrap left-[50%] transform -translate-x-[50%] text-white bg-[#0E2843] bg-opacity-50 px-4 py-2 rounded-lg">Guarda Roupa Casal Planejado</h3>
@@ -266,10 +273,10 @@ export default function Home() {
               data-aos-duration="2000"
               className="relative flex flex-col mx-3 lg:gap-4 lg:mr-4 lg:ml-4">
               <Image
-                src="/guarda-roupa-marrom.jpeg"
+                src="/cozinha-bege.jpg"
                 alt="Imagem moveis planejados"
-                width={500}
-                height={500}
+                width={450}
+                height={450}
                 className="rounded-3xl border-4 border-solid border-[#BE1E21]"
               />
               <h3 className="absolute bottom-4 whitespace-nowrap left-[50%] transform -translate-x-[50%] text-white bg-[#0E2843] bg-opacity-50 px-4 py-2 rounded-lg">Guarda Roupa Casal Planejado</h3>
@@ -279,10 +286,10 @@ export default function Home() {
               data-aos-duration="2000"
               className="relative mx-3">
               <Image
-                src="/cozinha-musgo.jpeg"
+                src="/cozinha-musgo.jpg"
                 alt="Imagem moveis planejados"
-                width={500}
-                height={500}
+                width={450}
+                height={450}
                 className="rounded-3xl border-4 border-solid border-[#BE1E21]"
               />
               <h3 className="absolute bottom-4 whitespace-nowrap left-[50%] transform -translate-x-[50%] text-white bg-[#0E2843] bg-opacity-50 px-4 py-2 rounded-lg">Cozinhas Planejadas</h3>
@@ -295,7 +302,7 @@ export default function Home() {
           <div
             data-aos="fade-down"
             data-aos-duration="2000"
-            className="text-center flex lg:justify-center">
+            className="text-center">
             <h2 className="text-3xl font-bold mb-20">UMA <span className="text-[#BE1E21]">NOVA EXPERIÊNCIA</span> EM PLANEJADO</h2>
           </div>
 
@@ -303,17 +310,16 @@ export default function Home() {
             <div
               data-aos="fade-right"
               data-aos-duration="2000"
-              className="relative">
+              className="relative w-full h-[350px] md:h-[600px] lg:ml-5">
               <Image
                 src="/processo.jpg"
                 alt="Imagem do processo TA Planejados"
-                width={900}
-                height={900}
+                fill
                 className="relative rounded-3xl z-420"
               />
-              <div className="absolute -top-3 left-[-3%] w-full h-full lg:top-7 lg:left-[-2%] lg:w-210 lg:h-140 bg-[#0E2843] rounded-3xl"></div>
+              <div className="absolute -top-4 left-[-3%] w-full h-full md:left-[-2%] md:-top-5 lg:-top-5 lg:left-[-2%] bg-[#0E2843] rounded-3xl"></div>
             </div>
-            <div className="flex flex-col gap-8 mt-5 lg:p-8 lg:w-[40%]">
+            <div className="flex flex-col gap-8 lg:pl-8">
               <ul className="space-y-6">
                 <li
                   data-aos="fade-left"
@@ -394,8 +400,8 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col-reverse lg:flex-row mx-5 pt-20">
-            <div className="flex-col lg:w-[50%] py-[5%] pl-[7%] pr-[3%]">
-              <div className="space-y-4">
+            <div className="flex flex-col justify-center pr-[3%]">
+              <div className="space-y-4 mt-5">
                 <h3
                   data-aos="fade-right"
                   data-aos-duration="2000"
@@ -435,15 +441,14 @@ export default function Home() {
             <div
               data-aos="fade-left"
               data-aos-duration="2000"
-              className="relative">
+              className="relative w-full h-[350px] md:h-[600px]">
               <Image
                 src="/entrega.jpg"
                 alt="Logo ta moveis planejados"
-                width={800}
-                height={800}
+                fill
                 className="relative rounded-3xl z-420"
               />
-              <div className="absolute -top-3 left-2 w-full h-full lg:top-[-5%] lg:left-[4%] lg:w-185 lg:h-125 bg-[#0E2843] rounded-3xl"></div>
+              <div className="absolute -top-5 left-[3%] w-full h-full md:left-[2%] md:-top-5 lg:-top-5 lg:left-[-2%] bg-[#0E2843] rounded-3xl"></div>
             </div>
           </div>
 
@@ -451,20 +456,19 @@ export default function Home() {
             <div
               data-aos="fade-right"
               data-aos-duration="2000"
-              className="relative">
+              className="relative w-full h-[350px] lg:ml-5 md:h-[600px]">
               <Image
                 src="/maquinario.jpg"
                 alt="Logo ta moveis planejados"
-                width={900}
-                height={900}
-                className="relative z-420 rounded-3xl lg:ml-[13%] lg:w-[90%]"
+                fill
+                className="relative rounded-3xl z-420"
               />
-              <div className="absolute -top-3 left-[-2.5%] w-full h-full lg:top-[-4%] lg:left-[11%] lg:w-200 lg:h-110 bg-[#0E2843] rounded-3xl"></div>
+              <div className="absolute -top-4 left-[-3%] w-full h-full md:left-[-2%] md:-top-5 lg:-top-5 lg:left-[-2%] bg-[#0E2843] rounded-3xl"></div>
             </div>
 
-            <div className="flex justify-center mt-10 lg:w-[50%] lg:pl-[4%] lg:pr-[9%]">
+            <div className="flex justify-center items-center lg:w-[50%] lg:pl-[4%] lg:pr-[9%]">
               <div className="flex flex-col space-y-7">
-                <div className="lg:flex items-center gap-4">
+                <div className="flex items-center gap-4 mt-5">
                   <FaCogs className="text-[#BE1E21] text-5xl" />
                   <h2
                     data-aos="fade-left"
@@ -604,45 +608,58 @@ export default function Home() {
             data-aos-duration="2000"
             className="flex flex-col items-center text-center">
             <div className="flex justify-center px-3">
-              <Image
-                src="/maps.png"
-                alt="Mapa Google Maps"
-                width={800}
-                height={800}
+              <div
                 data-aos="flip-up"
                 data-aos-duration="2000"
-                className="rounded-3xl border-4 border-solid border-[#0E2843]"
-              />
+                className="rounded-3xl border-4 border-solid border-[#0E2843] overflow-hidden w-90 md:w-190 lg:w-250 h-100"
+                style={{ background: "#e5e7eb" }}
+              >
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.502066502674!2d-46.50017862467015!3d-23.548024278809077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce674805f1e0d9%3A0x18205e42b65a9255!2sR.%20Dr.%20Xavier%20de%20Oliveira%2C%2045%20-%20Vila%20Nhocun%C3%A9%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003560-050!5e0!3m2!1spt-BR!2sbr!4v1748458177153!5m2!1spt-BR!2sbr"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Google Maps"
+                ></iframe>
+              </div>
             </div>
-            <p className="text-lg text-[#BE1E21] font-bold pt-3">Perto da estação Arthur Alvim</p>
-            <p className="text-lg"><span className="text-[#BE1E21] font-bold">Endereço:</span> Rua. Serra de Guaibu 178, Zona Leste | São Paulo - SP</p>
+            <p className="text-lg mt-3 mx-1"><span className="text-[#BE1E21] font-bold">Endereço:</span> Rua. Xavier de Oliveira 45, Zona Leste | São Paulo - SP</p>
           </div>
           <div className=" py-10 px-5">
-            <div className="flex flex-col mx-5 lg:flex-wrap justify-center items-center lg:max-w-6xl mx-auto lg:gap-40">
+            <div className="flex flex-col mx-5 lg:flex-wrap justify-center items-center lg:max-w-6xl mx-auto">
               <div>
                 <h2
                   data-aos="fade-right"
                   data-aos-duration="2000"
-                  className="text-3xl font-bold mb-6">Fale conosco:</h2>
+                  className="text-3xl font-bold">Fale conosco:</h2>
                 <div
 
                   className="flex items-center mb-4">
                   <div className="bg-[#BE1E21] text-[#FFFFFF] p-3 rounded-full mr-4">
                     <FaMapMarkerAlt size={25} />
                   </div>
-                  <p className="text-[#FFFFFF] bg-[#BE1E21] p-2 rounded-lg">Rua. Serra de Guaibu 178, Zona Leste | São Paulo - SP</p>
+                  <p className="text-[#FFFFFF] bg-[#BE1E21] p-2 rounded-lg">Rua. Xavier de Oliveira 45, Zona Leste | São Paulo - SP</p>
                 </div>
                 <div className="flex items-center mb-4">
                   <div className="bg-[#BE1E21] text-[#FFFFFF] p-3 rounded-full mr-4">
                     <FaPhoneAlt size={25} />
                   </div>
-                  <p className="text-[#FFFFFF] bg-[#BE1E21] p-2 rounded-lg">(11) 93243-4739</p>
+                  <p className="text-[#FFFFFF] bg-[#BE1E21] p-2 rounded-lg">(11) 95113-7030</p>
+                </div>
+                <div className="flex items-center mb-4">
+                  <div className="bg-[#BE1E21] text-[#FFFFFF] p-3 rounded-full mr-4">
+                    <FaPhoneAlt size={25} />
+                  </div>
+                  <p className="text-[#FFFFFF] bg-[#BE1E21] p-2 rounded-lg">(11) 94229-5865</p>
                 </div>
                 <div className="flex items-center mb-4">
                   <div className="bg-[#BE1E21] text-[#FFFFFF] p-3 rounded-full mr-4">
                     <FaEnvelope size={25} />
                   </div>
-                  <p className="text-[#FFFFFF] bg-[#BE1E21] p-2 rounded-lg">contato@ta.planejados.com</p>
+                  <p className="text-[#FFFFFF] bg-[#BE1E21] p-2 rounded-lg">taplanejados@gmail.com</p>
                 </div>
               </div>
               <div className="mt-10">
@@ -661,7 +678,7 @@ export default function Home() {
               <p className="text-lg font-extrabold mb-4">@ta.planejados</p>
               <div className="flex justify-center space-x-4">
                 <a
-                  href="#"
+                  href="https://www.instagram.com/ta.planejados/"
                   className="bg-[#BE1E21] text-white p-3 rounded-full"
                   aria-label="Instagram"
                 >
@@ -696,7 +713,6 @@ export default function Home() {
           className="mb-5"
         />
         <p className="font-bold">Todos os direitos reservados.</p>
-        <p className="text-sm font-bold">CNPJ 00.000.000/0001-00</p>
       </footer>
     </div>
   );
