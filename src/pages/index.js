@@ -240,7 +240,7 @@ export default function Home() {
                 height={450}
                 className="rounded-3xl border-4 border-solid border-[#BE1E21]"
               />
-              <h3 className="absolute bottom-8 whitespace-nowrap left-[50%] transform -translate-x-[50%] text-white bg-[#0E2843] bg-opacity-50 px-4 py-2 rounded-lg">Guarda Roupa Planejado</h3>
+              <h3 className="absolute bottom-8 whitespace-nowrap left-[50%] transform -translate-x-[50%] text-white bg-[#0E2843] bg-opacity-50 px-4 py-2 rounded-lg">Guarda Roupa Casal Planejado</h3>
             </div>
             <div
               data-aos="fade-left"
@@ -266,7 +266,7 @@ export default function Home() {
                 height={450}
                 className="rounded-3xl border-4 border-solid border-[#BE1E21]"
               />
-              <h3 className="absolute bottom-4 whitespace-nowrap left-[50%] transform -translate-x-[50%] text-white bg-[#0E2843] bg-opacity-50 px-4 py-2 rounded-lg">Guarda Roupa Casal Planejado</h3>
+              <h3 className="absolute bottom-4 whitespace-nowrap left-[50%] transform -translate-x-[50%] text-white bg-[#0E2843] bg-opacity-50 px-4 py-2 rounded-lg">Guarda Roupa Planejado</h3>
             </div>
             <div
               data-aos="fade-up"
@@ -279,7 +279,7 @@ export default function Home() {
                 height={450}
                 className="rounded-3xl border-4 border-solid border-[#BE1E21]"
               />
-              <h3 className="absolute bottom-4 whitespace-nowrap left-[50%] transform -translate-x-[50%] text-white bg-[#0E2843] bg-opacity-50 px-4 py-2 rounded-lg">Guarda Roupa Casal Planejado</h3>
+              <h3 className="absolute bottom-4 whitespace-nowrap left-[50%] transform -translate-x-[50%] text-white bg-[#0E2843] bg-opacity-50 px-4 py-2 rounded-lg">Cozinha Planejada Pequena</h3>
             </div>
             <div
               data-aos="fade-left"
