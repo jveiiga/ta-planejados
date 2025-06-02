@@ -70,7 +70,7 @@ export default function Home() {
                   data-aos="fade-left"
                   data-aos-duration="2000"
                   className="text-6xl mx-1 lg:text-8xl font-extrabold text-[#FFFFFF]">
-                  <span className="sm:text-sm lg:text-lg">com até</span> 60% OFF
+                  <span className="relative sm:text-sm lg:text-lg">em até</span> 12x <span className="absolute text-sm p-2 border-1 border-solid border-[#0E2843] bg-[#BE1E21] rounded-2xl bottom-1 md:bottom-2 lg:bottom-3">no cartão</span>
                 </h2>
               </div>
 
