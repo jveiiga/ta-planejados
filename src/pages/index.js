@@ -59,7 +59,7 @@ export default function Home() {
               <div className="w-full mt-15">
                 <h1
                   style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.86)" }}
-                  className="text-6xl mx-1 lg:text-7xl font-black text-[#FFFFFF]">
+                  className="relative text-6xl mx-1 lg:text-7xl font-black text-[#FFFFFF]">
                   Móveis Planejados
                 </h1>
                 <h2
@@ -70,7 +70,7 @@ export default function Home() {
                   data-aos="fade-left"
                   data-aos-duration="2000"
                   className="text-6xl mx-1 lg:text-8xl font-extrabold text-[#FFFFFF]">
-                  <span className="relative sm:text-sm lg:text-lg">em até</span> 12x <span className="absolute text-sm p-2 border-1 border-solid border-[#0E2843] bg-[#BE1E21] rounded-2xl bottom-1 md:bottom-2 lg:bottom-3">no cartão</span>
+                  <span className="relative text-4xl md:text-2xl lg:text-6xl">em até 12x</span><span className="absolute text-xs lg:text-sm p-2 border-1 border-solid border-[#0E2843] bg-[#BE1E21] rounded-2xl bottom-1 md:bottom-1 lg:bottom-3">no cartão</span>
                 </h2>
               </div>
 
