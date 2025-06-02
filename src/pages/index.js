@@ -59,19 +59,26 @@ export default function Home() {
               <div className="w-full mt-15">
                 <h1
                   style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.86)" }}
-                  className="relative text-6xl mx-1 lg:text-7xl font-black text-[#FFFFFF]">
+                  className="relative text-6xl mx-1 lg:text-7xl font-black text-[#FFFFFF]"
+                >
                   Móveis Planejados
                 </h1>
-                <h2
-                  style={{
-                    fontFamily: '"Raleway", sans-serif',
-                    textShadow: "4px 4px 6px rgba(251, 2, 2, 0.86)",
-                  }}
-                  data-aos="fade-left"
-                  data-aos-duration="2000"
-                  className="text-6xl mx-1 lg:text-8xl font-extrabold text-[#FFFFFF]">
-                  <span className="relative text-4xl md:text-2xl lg:text-6xl">em até 12x</span><span className="absolute text-xs lg:text-sm p-2 border-1 border-solid border-[#0E2843] bg-[#BE1E21] rounded-2xl bottom-1 md:bottom-1 lg:bottom-3">no cartão</span>
-                </h2>
+                <div className="relative inline-block mx-1" style={{ minWidth: 280 }}> {/* <- wrapper evita compressão */}
+                  <span
+                    style={{
+                      fontFamily: '"Raleway", sans-serif',
+                      textShadow: "4px 4px 6px rgba(251, 2, 2, 0.86)",
+                    }}
+                    data-aos="fade-left"
+                    data-aos-duration="2000"
+                    className="text-6xl lg:text-8xl font-extrabold text-[#FFFFFF] block"
+                  >
+                    <span className="relative text-5xl lg:text-6xl inline-block">em até 12x</span>
+                    <span className="absolute bottom-1 md:bottom-1 lg:bottom-3 text-xs lg:text-sm p-2 border border-solid border-[#0E2843] bg-[#BE1E21] rounded-2xl whitespace-nowrap">
+                      no cartão
+                    </span>
+                  </span>
+                </div>
               </div>
 
               <div className="flex justify-center mt-5 lg:mt-15">
