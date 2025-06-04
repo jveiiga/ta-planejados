@@ -3,6 +3,7 @@ import { FaWhatsapp, FaLightbulb, FaCouch, FaDollarSign, FaIndustry, FaRegHandsh
 import { MdOutlineCheckCircle, MdOutlineHighQuality } from "react-icons/md";
 import { useEffect, useState } from "react";
 import Aos from "aos";
+import Head from "next/head";
 
 export default function Home() {
 
@@ -23,6 +24,36 @@ export default function Home() {
 
   return (
     <div className="overflow-x-hidden">
+      <Head>
+        <title>Móveis Planejados em São Paulo | TA Planejados</title>
+        <meta name="description" content="Transforme sua casa com móveis planejados sob medida em até 12x no cartão. Atendimento personalizado, entrega rápida e profissionais com 10 anos de experiência. Consulte!" />
+        <meta property="og:title" content="Móveis Planejados em São Paulo | TA Planejados" />
+        <meta property="og:description" content="Transforme sua casa com móveis planejados sob medida em até 12x no cartão. Atendimento personalizado, entrega rápida e profissionais com 10 anos de experiência." />
+        <meta property="og:image" content="/miniatura.jpg" /> {/* coloque uma imagem destacada */}
+        <meta property="og:url" content="https://taplanelados.com" />
+        <meta property="og:type" content="website" />
+
+        <link rel="canonical" href="https://seusite.com.br" />
+        <script type="application/ld+json">
+          {`
+              {
+                "@context": "https://schema.org",
+                "@type": "LocalBusiness",
+                "name": "TA Planejados",
+                "image": "https://taplanejados.com.br/miniatura.jpg",
+                "telephone": "+5511951137030",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Rua. Xavier de Oliveira 45, Zona Leste",
+                  "addressLocality": "São Paulo",
+                  "addressRegion": "SP",
+                  "postalCode": "03560-050",
+                  "addressCountry": "BR"
+                }
+              }
+            `}
+        </script>
+      </Head>
       <main>
         <section className="relative flex-col justify-center items-center w-full h-[80vh] lg:h-[100vh] bg-[url('/background.jpg')] bg-cover bg-center" id="inicio">
           <div className="absolute inset-0 bg-black opacity-40 z-0"></div>
@@ -63,7 +94,7 @@ export default function Home() {
                 >
                   Móveis Planejados
                 </h1>
-                <div className="relative inline-block mx-1" style={{ minWidth: 280 }}> {/* <- wrapper evita compressão */}
+                <div className="relative inline-block mx-1" style={{ minWidth: 280 }}> 
                   <span
                     style={{
                       fontFamily: '"Raleway", sans-serif',
