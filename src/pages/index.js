@@ -94,7 +94,7 @@ export default function Home() {
                 >
                   Móveis Planejados
                 </h1>
-                <div className="relative inline-block mx-1" style={{ minWidth: 280 }}> 
+                <div className="relative inline-block mx-1" style={{ minWidth: 280 }}>
                   <span
                     style={{
                       fontFamily: '"Raleway", sans-serif',
@@ -751,6 +751,24 @@ export default function Home() {
           className="mb-5"
         />
         <p className="font-bold">Todos os direitos reservados.</p>
+        <div>
+          <a
+            href="https://wa.me/5511915181487?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20servi%C3%A7o."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="flex justify-center">
+              <p className="mt-1.5 mr-1">Desenvolvido por:</p>
+              <Image
+                src="/logo.png"
+                alt="logo jveiga"
+                width={100}
+                height={100}
+                className="mb-5"
+              />
+            </div>
+          </a>
+        </div>
       </footer>
     </div>
   );
