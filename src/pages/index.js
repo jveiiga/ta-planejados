@@ -73,7 +73,6 @@ export default function Home() {
             data-aos="fade-right"
             data-aos-duration="2000"
             className="hidden sm:block absolute bottom-10 h-90 w-[70%] lg:w-[50%] bg-[#0E2843] z-10"></div>
-
           <div className="relative flex justify-center items-center w-full h-full z-10">
             <div className="hidden sm:block w-full h-[40vh] lg:h-[90vh]">
               <Image
@@ -121,7 +120,7 @@ export default function Home() {
                   <button
                     data-aos="fade-down"
                     data-aos-duration="2000"
-                    className="flex items-center px-15 lg:px-45 py-7 text-lg text-[#FFFFFF] font-semibold bg-[#128C7E] hover:bg-[#0e705f] whitespace-nowrap transition cursor-pointer animate-pulse"
+                    className="flex items-center px-15 lg:px-35 xl:px-45 py-7 text-lg text-[#FFFFFF] font-semibold bg-[#128C7E] hover:bg-[#0e705f] whitespace-nowrap transition cursor-pointer animate-pulse"
                     type="button"
                   >
                     Solicitar Orçamento
@@ -336,7 +335,6 @@ export default function Home() {
         </section>
 
         <section className="py-20">
-
           <div
             data-aos="fade-down"
             data-aos-duration="2000"
