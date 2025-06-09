@@ -29,18 +29,18 @@ export default function Home() {
         <meta name="description" content="Transforme sua casa com móveis planejados sob medida em até 12x no cartão. Atendimento personalizado, entrega rápida e profissionais com 10 anos de experiência. Consulte!" />
         <meta property="og:title" content="Móveis Planejados em São Paulo | TA Planejados" />
         <meta property="og:description" content="Transforme sua casa com móveis planejados sob medida em até 12x no cartão. Atendimento personalizado, entrega rápida e profissionais com 10 anos de experiência." />
-        <meta property="og:image" content="/miniatura.jpg" /> {/* coloque uma imagem destacada */}
-        <meta property="og:url" content="https://taplanelados.com" />
+        <meta property="og:image" content="/miniatura.jpg" />
+        <meta property="og:url" content="https://www.taplanelados.com" />
         <meta property="og:type" content="website" />
 
-        <link rel="canonical" href="https://seusite.com.br" />
+        <link rel="canonical" href="https://www.taplanelados.com" />
         <script type="application/ld+json">
           {`
               {
                 "@context": "https://schema.org",
                 "@type": "LocalBusiness",
                 "name": "TA Planejados",
-                "image": "https://taplanejados.com.br/miniatura.jpg",
+                "image": "https:///www.taplanelados.com/miniatura.jpg",
                 "telephone": "+5511951137030",
                 "address": {
                   "@type": "PostalAddress",
@@ -65,7 +65,7 @@ export default function Home() {
               <p
                 data-aos="fade-up"
                 data-aos-duration="2000"
-                className="text-[#FFFFFF] text-lg lg:text-3xl font-extrabold pr-8">MÓVEIS SOB MEDIDA</p>
+                className="text-[#FFFFFF] text-lg lg:text-2xl xl:text-3xl font-extrabold pr-8">MÓVEIS SOB MEDIDA</p>
             </div>
           </div>
 
@@ -86,8 +86,8 @@ export default function Home() {
               />
             </div>
 
-            <div className="flex flex-col lg:absolute lg:right-17 lg:right-50 lg:w-[34%]">
-              <div className="w-full mt-15">
+            <div className="flex flex-col lg:absolute lg:right-17 lg:w-[34%]">
+              <div className="w-full xl:mt-15">
                 <h1
                   style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.86)" }}
                   className="relative text-6xl mx-1 lg:text-7xl font-black text-[#FFFFFF]"
@@ -112,7 +112,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="flex justify-center mt-5 lg:mt-15">
+              <div className="flex justify-center mt-5 xl:mt-15">
                 <a
                   href="https://wa.me/5511951137030?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento."
                   target="_blank"
@@ -121,7 +121,7 @@ export default function Home() {
                   <button
                     data-aos="fade-down"
                     data-aos-duration="2000"
-                    className="flex items-center px-15 lg:px-20 lg:px-45 py-7 text-lg text-[#FFFFFF] font-semibold bg-[#128C7E] hover:bg-[#0e705f] transition cursor-pointer animate-pulse"
+                    className="flex items-center px-15 lg:px-45 py-7 text-lg text-[#FFFFFF] font-semibold bg-[#128C7E] hover:bg-[#0e705f] whitespace-nowrap transition cursor-pointer animate-pulse"
                     type="button"
                   >
                     Solicitar Orçamento
@@ -192,7 +192,7 @@ export default function Home() {
               <div
                 data-aos="fade-right"
                 data-aos-duration="2000"
-                className="pt-20 lg:w-[40%] lg:ml-20">
+                className=" lg:w-[40%] lg:ml-20">
                 <p className="font-medium leading-[2]">A TA PLANEJADOS, tem construido historias e conquistados seu espaço no setor moveleiro, com preços atraentes e excelencia na qualidade e na entrega, nossa equipe tem cativado
                   nossos clientes com um atendimento personalizado, e com isso, temos conquistado cada vez mais espaço no mercado moveleiro.
                   <span className="text-[#BE1E21]"> Acreditamos que o nosso diferencial é o atendimento personalizado</span>, onde cada cliente é tratado como único.
@@ -238,7 +238,7 @@ export default function Home() {
               className="mt-4 text-xl text-[#FFFFFF] text-center font-bold">A ESCOLHA INTELIGENTE PARA <span className="text-[#0E2843]">ECONOMIZAR</span> DE VERDADE!</p>
             <FaLightbulb className="text-[#FFFFFF] text-6xl" />
           </div>
-          <div className="flex flex-col items-center pt-20 px-[5%] lg:px-[30%]">
+          <div className="flex flex-col items-center pt-20 px-[5%] xl:px-[30%]">
             <Image
               src="/ta-planejados.png"
               alt="Logo ta moveis planejados"
@@ -448,12 +448,12 @@ export default function Home() {
                   data-aos="fade-right"
                   data-aos-duration="2000"
                 >Aqui você tem condições <span className="text-[#BE1E21]"> especiais</span> para pagamento, facilitamos em
-                  <span className="text-[#BE1E21]"> até 36 vezes no boleto</span>. Mais tranquilidade e confiança para realizar o projeto dos seus sonhos.
+                  <span className="text-[#BE1E21]"> até 12 vezes no cartão</span>. Mais tranquilidade e confiança para realizar o projeto dos seus sonhos.
                 </p>
                 <p
                   data-aos="fade-right"
                   data-aos-duration="2000"
-                  className="text-[#BE1E21] text-sm"><span className="font-bold">OPCIONAL</span><br />para clientes que optarem por pagamento via boleto sujeito a análise de crédito.</p>
+                  className="text-[#BE1E21] text-sm"><span className="font-bold">OPCIONAL</span><br />Para clientes que optarem por pagamento via cartão de crédito, poderão incidir taxas de juros conforme as condições da administradora.</p>
               </div>
               <div className="flex items-center mt-8">
                 <FaBox className="text-[#BE1E21] text-6xl" />
