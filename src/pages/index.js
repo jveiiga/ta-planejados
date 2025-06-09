@@ -87,7 +87,7 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col lg:absolute lg:right-17 lg:w-[34%]">
-              <div className="w-full xl:mt-15">
+              <div className="w-full mt-15 lg:mt-0 xl:mt-15">
                 <h1
                   style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.86)" }}
                   className="relative text-6xl mx-1 lg:text-7xl font-black text-[#FFFFFF]"
@@ -171,8 +171,8 @@ export default function Home() {
             <div
               data-aos="fade-right"
               data-aos-duration="2000"
-              className="flex justify-center py-5 px-[5%] lg:px-[20%] mb-10">
-              <p className="font-medium text-center">Sabemos da <span className="text-[#BE1E21]">importância do seu sonho</span> e, por isso, cuidamos de cada detalhe.
+              className="flex justify-center py-5 px-[5%] lg:px-[20%]">
+              <p className="font-medium text-center leading-[2]">Sabemos da <span className="text-[#BE1E21]">importância do seu sonho</span> e, por isso, cuidamos de cada detalhe.
                 Do <span className="text-[#BE1E21]">planejamento ao prazo de entrega</span>, tudo é feito com muito carinho para você.
                 Nosso maior objetivo é a realização do seu sonho e a certeza de termos participado de cada etapa.
                 Nosso compromisso é atendê-lo cada vez melhor, respeitando os prazos e <span className="text-[#BE1E21]">tomando todos os cuidados necessários</span> na montagem do seu móvel.
@@ -192,7 +192,7 @@ export default function Home() {
               <div
                 data-aos="fade-right"
                 data-aos-duration="2000"
-                className=" lg:w-[40%] lg:ml-20">
+                className=" lg:w-[40%] mt-10 lg:ml-20">
                 <p className="font-medium leading-[2]">A TA PLANEJADOS, tem construido historias e conquistados seu espaço no setor moveleiro, com preços atraentes e excelencia na qualidade e na entrega, nossa equipe tem cativado
                   nossos clientes com um atendimento personalizado, e com isso, temos conquistado cada vez mais espaço no mercado moveleiro.
                   <span className="text-[#BE1E21]"> Acreditamos que o nosso diferencial é o atendimento personalizado</span>, onde cada cliente é tratado como único.
